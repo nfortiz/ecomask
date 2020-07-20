@@ -1,0 +1,141 @@
+:root {
+    --text-color: white;
+    --background-color: rgb(19,78,94);
+    --secondary-color: white;
+    --accent-color: rgb(19,78,94);
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    text-align: center;
+
+}
+
+.brand-image {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    background-color: var(--background-color);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: var(--text-color);
+}
+
+nav a.navbar-brand.brand {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.hero {
+    background: var(--background-color);
+    /* background: linear-gradient(90deg, rgba(19,78,94,1) 70%, rgba(113,178,128,0.8) 100%); */
+    height: auto;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+}
+
+.hero__container {
+    padding-top: 6rem;
+}
+
+.hero__title {
+    font-size: 3rem;
+    font-weight: bold;
+    width: 100%;
+    color: var(--text-color);
+}
+
+.hero__description {
+    color: var(--text-color);
+}
+
+.hero form {
+    padding: 0 !important;
+}
+
+.form__title {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+#name-input, #email-input, #submit {
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,.125);
+}
+
+.hero__img {
+    position: relative;
+    width: 100%;
+    height: 0;
+}
+
+.hero__img img{
+    position: absolute;
+    width: 100%;
+    animation: maskAnimation 5s linear infinite;
+}
+
+@keyframes maskAnimation{
+    0%, 100% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.features {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.feature__title {
+    text-transform: capitalize;
+}
+
+.feature__item {
+    padding: 20px 15px;
+    box-shadow: 0 0 10px #dddde3;
+}
+
+.feature__item h4 {
+    text-transform: capitalize;
+}
+
+.feature__item--icon span {
+    font-size: 3rem;
+    color: var(--accent-color);
+
+}
+
+@media screen and (max-width: 767px) {
+    .hero__img img{
+        display: none;
+    }
+}
+
+.customer__logo {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.customer__logo img {
+    width: 100%;
+    height: auto;
+}
+
+
+.footer {
+    --footer-height: 100px;
+    color: var(--text-color);
+    width: 100%;
+    height: var(--footer-height);
+    background-color: var(--background-color);
+}
+
+.footer__wrapper {
+    height: var(--footer-height);
+}
