@@ -1,8 +1,9 @@
 :root {
     --text-color: white;
-    --background-color: rgb(19,78,94);
+    --background-color: rgb(58,124,77);
     --secondary-color: white;
-    --accent-color: rgb(19,78,94);
+    --accent-color: rgb(58,124,77);
+    --highlight-color: rgb(19,78,94);
 }
 
 .title {
@@ -39,7 +40,7 @@ nav a.navbar-brand.brand {
 }
 
 .hero::after {
-    background-image: url(./assets/shape-bg.png);
+    background-image: url(../assets/shape-bg.png);
     background-size: cover;
     content: '';
     position: absolute;
@@ -69,9 +70,26 @@ nav a.navbar-brand.brand {
     padding: 0 !important;
 }
 
+.hero form label {
+    color: var(--text-color);
+}
+
 .form__title {
     font-size: 2rem;
     color: var(--text-color);
+}
+
+.btn-send {
+    color: #fff;
+    background-color: var(--highlight-color);
+    border-color: var(--highlight-color);
+    transition: opacity 600ms;
+    opacity: 0.85;
+}
+
+.btn-send:hover {
+    color: white;
+    opacity: 1;
 }
 
 #name-input, #email-input, #submit {
@@ -120,7 +138,7 @@ nav a.navbar-brand.brand {
 
 .feature__item--icon span {
     font-size: 3rem;
-    color: var(--accent-color);
+    color: var(--highlight-color);
 
 }
 
