@@ -90,6 +90,15 @@ nav a.navbar-brand.brand {
     color: var(--text-color);
 }
 
+.form__success {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+
+.form__success i {
+    color: var(--text-color);
+}
+
 .btn-send {
     color: #fff;
     background-color: var(--highlight-color);
