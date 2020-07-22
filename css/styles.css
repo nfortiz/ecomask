@@ -30,13 +30,24 @@ nav a.navbar-brand.brand {
 }
 
 .hero {
-    background: var(--background-color);
-    /* background: linear-gradient(90deg, rgba(19,78,94,1) 70%, rgba(113,178,128,0.8) 100%); */
+    background-image: url(../assets/mercadobaja.jpg);
+    background-size: cover;  
+    background-position: center;
     height: auto;
     width: 100%;
     min-height: 100vh;
     height: 100%;
     position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    background: rgb(46, 97, 60, 0.95);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 .hero::after {
@@ -136,16 +147,10 @@ nav a.navbar-brand.brand {
     text-transform: capitalize;
 }
 
-.feature__item--icon span {
+.feature__item--icon i {
     font-size: 3rem;
     color: var(--highlight-color);
 
-}
-
-@media screen and (max-width: 767px) {
-    .hero__img img{
-        display: none;
-    }
 }
 
 .customer__logo {
@@ -169,4 +174,18 @@ nav a.navbar-brand.brand {
 
 .footer__wrapper {
     height: var(--footer-height);
+}
+
+
+/*******************************/
+/*******************************/
+
+
+@media screen and (max-width: 767px) {
+    .hero {
+        background-image: none;
+    }
+    .hero__img img{
+        display: none;
+    }
 }
