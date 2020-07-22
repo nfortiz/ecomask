@@ -156,10 +156,13 @@ nav a.navbar-brand.brand {
 .customer__logo {
     margin: 0;
     margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .customer__logo img {
-    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
     height: auto;
 }
 
@@ -178,6 +181,7 @@ nav a.navbar-brand.brand {
 
 
 /*******************************/
+/***********Media queries*******/
 /*******************************/
 
 
