@@ -119,10 +119,11 @@ nav a.navbar-brand.brand {
 .hero__img {
     position: relative;
     width: 100%;
-    top: -100px;
+    top: -150px;
 }
 
 .hero__img img{
+    object-fit: none;
     position: absolute;
     width: 100%;
     animation: maskAnimation 5s linear infinite;
